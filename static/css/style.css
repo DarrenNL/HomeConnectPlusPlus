@@ -1,0 +1,211 @@
+﻿/* Style for the login page */
+
+.login-page {
+    background-color: #f8f9fa;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.login-page h2 {
+    margin-top: 50px;
+    color: #343a40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    margin-left: 12px;
+}
+
+#login-error {
+    font-size: 14px;
+}
+
+#register-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    margin-left: 12px;
+    /* Ensures form doesn’t get too wide on larger screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: adds a subtle shadow */
+}
+
+
+/* General styles */
+
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+h2,
+h3,
+h4 {
+    color: #343a40;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin: 20px;
+}
+
+
+/* Style for individual device cards */
+
+.device-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 43%;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Status styling */
+
+.device-card p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.device-card img {
+    height: 40px;
+    width: 40px;
+}
+
+
+/* Icons and labels */
+
+.device-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.device-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.device-status {
+    font-size: 1em;
+    color: #666;
+}
+
+
+/* Device styles */
+
+.device {
+    border: 1px solid #ced4da;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.device-on {
+    background-color: #e2f7e2;
+}
+
+.device-off {
+    background-color: #f7e2e2;
+}
+
+.device h4 {
+    margin-top: 0;
+}
+
+.device-status {
+    font-weight: bold;
+}
+
+
+/* Security status */
+
+#security-status-text {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+/* Location animation */
+
+#animation-container {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin-top: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+#user-icon,
+#home-icon {
+    position: absolute;
+    top: 15px;
+    font-size: 24px;
+}
+
+#user-icon {
+    left: 0;
+    transition: left 1s;
+}
+
+#home-icon {
+    right: 0;
+}
+
+
+/* Command section */
+
+#command-section {
+    margin-top: 30px;
+}
+
+#ai-response {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button[type="submit"] {
+    background-color: #da291c;
+    border: none;
+    color: white;
+    /* Optional: to make the text color white */
+    padding: 10px;
+    border-radius: 5px;
+    /* Optional: to give rounded corners */
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 15px;
+        padding: 10px;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .device {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    #command-section {
+        margin-top: 20px;
+    }
+}
