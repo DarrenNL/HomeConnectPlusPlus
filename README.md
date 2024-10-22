@@ -1,1 +1,1 @@
-# smart_home
+# HomeConnect Plus +
