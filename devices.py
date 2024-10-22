@@ -12,7 +12,7 @@ answer_ob = None
 
 client = OpenAI(
     # This is the default and can be omitted
-    api_key="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",
+    api_key=""
 )
 
 system_prompt = "You are an encoder that can help me read the given sentence and identify two variables returned \
